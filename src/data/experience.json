@@ -1,0 +1,44 @@
+{
+  "timeline": [
+    {
+      "id": 1,
+      "year": "2020 - Present",
+      "title": "Editor & CEO",
+      "company": "Channel 5",
+      "description": "Leading editorial strategy and managing daily operations of one of Bangladesh's leading news channels.",
+      "icon": "Tv"
+    },
+    {
+      "id": 2,
+      "year": "2015 - 2020",
+      "title": "Special Correspondent",
+      "company": "Channel S",
+      "description": "Covered major international events and political developments in South Asia and Europe.",
+      "icon": "Mic"
+    },
+    {
+      "id": 3,
+      "year": "2010 - 2015",
+      "title": "Senior Correspondent",
+      "company": "Ekattor TV",
+      "description": "Investigative reporting on human rights issues and political corruption.",
+      "icon": "Camera"
+    },
+    {
+      "id": 4,
+      "year": "2005 - 2010",
+      "title": "Senior Reporter",
+      "company": "Daily Jugantor",
+      "description": "Covered national politics, human interest stories, and investigative pieces.",
+      "icon": "Newspaper"
+    },
+    {
+      "id": 5,
+      "year": "1998 - 2005",
+      "title": "Staff Reporter",
+      "company": "The Daily Jalalabad",
+      "description": "Began journalism career covering local news and community events.",
+      "icon": "Pen"
+    }
+  ]
+}

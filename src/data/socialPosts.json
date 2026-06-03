@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "platform": "Facebook",
+      "date": "2024-03-20",
+      "content": "Just completed an investigative report on human rights violations in Southeast Asia. The truth must be heard. Our team interviewed over 50 victims and collected compelling evidence. This is what journalism is all about - giving voice to the voiceless.",
+      "image": "/images/posts/investigation.jpg",
+      "engagement": {
+        "likes": 12540,
+        "comments": 1230,
+        "shares": 890
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123456"
+    },
+    {
+      "id": 2,
+      "platform": "Facebook",
+      "date": "2024-03-15",
+      "content": "Breaking: New documentary on climate change impact released today. Watch as we travel to coastal communities affected by rising sea levels. Available on Channel 5 at 8 PM. #ClimateCrisis #Documentary",
+      "image": "/images/posts/climate-doc.jpg",
+      "engagement": {
+        "likes": 8920,
+        "comments": 756,
+        "shares": 543
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123455"
+    },
+    {
+      "id": 3,
+      "platform": "Facebook",
+      "date": "2024-03-10",
+      "content": "Honored to receive the International Press Freedom Award today. This recognition belongs to my entire team and all the courageous sources who trusted us with their stories. Together, we are fighting for a world where truth prevails.",
+      "image": "/images/posts/award.jpg",
+      "engagement": {
+        "likes": 18750,
+        "comments": 2100,
+        "shares": 1540
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123454"
+    },
+    {
+      "id": 4,
+      "platform": "Facebook",
+      "date": "2024-03-05",
+      "content": "Just wrapped up interviews in Bangladesh for our upcoming special report on labor rights. The stories we collected are powerful and heartbreaking. Stay tuned for the full documentary next month.",
+      "image": "/images/posts/bangladesh.jpg",
+      "engagement": {
+        "likes": 7340,
+        "comments": 562,
+        "shares": 421
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123453"
+    },
+    {
+      "id": 5,
+      "platform": "Facebook",
+      "date": "2024-02-28",
+      "content": "Interview with BBC News discussing the future of journalism in restrictive environments. How can we maintain editorial independence while reaching audiences? Watch full interview on BBC World Service.",
+      "image": "/images/posts/bbc-interview.jpg",
+      "engagement": {
+        "likes": 6780,
+        "comments": 445,
+        "shares": 389
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123452"
+    },
+    {
+      "id": 6,
+      "platform": "Facebook",
+      "date": "2024-02-20",
+      "content": "Our investigative team has been nominated for the Pulitzer Prize! This is a testament to months of hard work, dedication, and commitment to uncovering the truth. Grateful for every member of our team.",
+      "image": "/images/posts/pulitzer.jpg",
+      "engagement": {
+        "likes": 22100,
+        "comments": 3450,
+        "shares": 2890
+      },
+      "link": "https://facebook.com/nurulwahid/posts/123451"
+    }
+  ]
+}

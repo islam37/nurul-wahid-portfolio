@@ -1,0 +1,20 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Dr. Muhammad Yunus",
+      "title": "Nobel Peace Prize Laureate",
+      "text": "Nurul Wahid represents the finest in journalism - truth, courage, and unwavering commitment to justice.",
+      "image": "/images/testimonials/yunus.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Christiane Amanpour",
+      "title": "Chief International Correspondent, CNN",
+      "text": "A journalist of exceptional integrity and dedication to uncovering the truth.",
+      "image": "/images/testimonials/amanpour.jpg",
+      "rating": 5
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "stats": [
+    { "id": 1, "label": "Years of Experience", "value": 25, "suffix": "+" },
+    { "id": 2, "label": "Followers", "value": 500000, "suffix": "+", "prefix": "" },
+    { "id": 3, "label": "Reports Published", "value": 3500, "suffix": "+" },
+    { "id": 4, "label": "Countries Covered", "value": 45, "suffix": "" },
+    { "id": 5, "label": "Languages Spoken", "value": 6, "suffix": "" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "logos": [
+    { "id": 1, "name": "BBC News", "logo": "/images/logos/bbc.svg", "url": "https://bbc.com" },
+    { "id": 2, "name": "Al Jazeera", "logo": "/images/logos/aljazeera.svg", "url": "https://aljazeera.com" },
+    { "id": 3, "name": "The Guardian", "logo": "/images/logos/guardian.svg", "url": "https://theguardian.com" },
+    { "id": 4, "name": "CNN", "logo": "/images/logos/cnn.svg", "url": "https://cnn.com" }
+  ],
+  "interviews": [
+    {
+      "id": 1,
+      "title": "Exclusive Interview: Bangladesh's Media Evolution",
+      "media": "BBC World News",
+      "date": "March 15, 2024",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "title": "Human Rights in South Asia",
+      "media": "Al Jazeera",
+      "date": "January 10, 2024",
+      "url": "#"
+    }
+  ]
+}
