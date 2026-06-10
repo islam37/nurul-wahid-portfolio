@@ -10,10 +10,27 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    text-size-adjust: 100%;
   }
   
   body {
-    @apply bg-navy text-white font-inter overflow-x-hidden;
+    @apply bg-[#08111f] text-white font-inter overflow-x-hidden antialiased;
+    min-width: 320px;
+    text-rendering: optimizeLegibility;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
   }
 
   ::-webkit-scrollbar {
@@ -30,16 +47,32 @@
 }
 
 @layer components {
+  .container {
+    @apply w-full max-w-7xl;
+  }
+
+  .section-shell {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
   .glassmorphism {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-300;
+    @apply rounded-lg border border-white/10 bg-white/[0.055] shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-300;
   }
   
   .gradient-text {
     @apply bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent;
   }
+
+  .premium-card {
+    @apply rounded-lg border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.025))] shadow-[0_20px_70px_rgba(0,0,0,0.32)] backdrop-blur-xl;
+  }
+
+  .premium-button {
+    @apply inline-flex min-h-11 items-center justify-center rounded-lg px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gold/50 focus:ring-offset-2 focus:ring-offset-navy;
+  }
   
   section {
-    @apply scroll-mt-20;
+    @apply scroll-mt-24;
   }
 }
 
@@ -54,6 +87,10 @@
   
   .text-gradient {
     @apply bg-gradient-to-r from-white via-gold to-white bg-clip-text text-transparent;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }
 

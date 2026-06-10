@@ -16,7 +16,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <AnimatedBackground />
-        <div className="min-h-screen flex flex-col relative z-10 bg-gradient-to-b from-navy/40 via-charcoal/40 to-navy/40">
+        <div className="min-h-screen flex flex-col relative z-10 bg-gradient-to-b from-navy/50 via-charcoal/35 to-navy/60">
           <Navbar />
           <AnimatePresence mode="wait">
             <main className="flex-grow">

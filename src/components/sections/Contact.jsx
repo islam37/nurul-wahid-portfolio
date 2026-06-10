@@ -21,42 +21,42 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-24 bg-navy">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="section-shell bg-navy">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-14 lg:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+          <span className="text-gold text-xs sm:text-sm font-bold tracking-[0.22em] uppercase">Contact</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-white mt-4 mb-4 text-balance">
             Get In Touch
           </h2>
-          <div className="w-20 h-1 bg-gold mx-auto" />
+          <div className="w-16 sm:w-20 h-1 bg-gold mx-auto rounded-full" />
         </motion.div>
 
-        <div ref={ref} className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
+        <div ref={ref} className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            className="space-y-8"
+            className="grid gap-4 sm:gap-5"
           >
-            <div className="glassmorphism p-6">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="glassmorphism p-5 sm:p-6">
+              <div className="flex items-center gap-4">
                 <div className="p-3 bg-gold/10 rounded-lg">
                   <FaEnvelope className="text-gold" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold">Email</h4>
-                  <a href={`mailto:${profileData.email}`} className="text-gold hover:text-gold-dark">
+                  <a href={`mailto:${profileData.email}`} className="text-gold hover:text-gold-dark break-all">
                     {profileData.email}
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="glassmorphism p-6">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="glassmorphism p-5 sm:p-6">
+              <div className="flex items-center gap-4">
                 <div className="p-3 bg-gold/10 rounded-lg">
                   <FaPhone className="text-gold" size={24} />
                 </div>
@@ -69,8 +69,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="glassmorphism p-6">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="glassmorphism p-5 sm:p-6">
+              <div className="flex items-center gap-4">
                 <div className="p-3 bg-gold/10 rounded-lg">
                   <FaMapMarkerAlt className="text-gold" size={24} />
                 </div>
@@ -82,13 +82,12 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.form
             ref={ref}
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             onSubmit={handleSubmit}
-            className="space-y-6"
+            className="premium-card space-y-5 sm:space-y-6 p-5 sm:p-6 lg:p-8"
           >
             <div>
               <label className="block text-white font-semibold mb-2">Name</label>
@@ -98,7 +97,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
+                className="w-full bg-white/[0.055] border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-colors"
                 placeholder="Your name"
               />
             </div>
@@ -110,7 +109,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors"
+                className="w-full bg-white/[0.055] border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-colors"
                 placeholder="your@email.com"
               />
             </div>
@@ -122,16 +121,16 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows="5"
-                className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold transition-colors resize-none"
+                className="w-full bg-white/[0.055] border border-white/15 rounded-lg px-4 py-3 text-white placeholder-gray-light focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-colors resize-none"
                 placeholder="Your message..."
               />
             </div>
             <motion.button
               type="submit"
-              whileHover={{ scale: 1.05 }}
-              className="w-full py-3 bg-gold text-navy font-semibold rounded-full hover:bg-gold-dark transition-all"
+              whileHover={{ scale: 1.02 }}
+              className="premium-button w-full bg-gold text-navy shadow-lg shadow-gold/20 hover:bg-gold-dark hover:-translate-y-0.5"
             >
-              {submitted ? 'Message Sent! ✓' : 'Send Message'}
+              {submitted ? 'Message Sent!' : 'Send Message'}
             </motion.button>
           </motion.form>
         </div>

@@ -15,9 +15,9 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-charcoal border-t border-white/10">
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-[#07101d] border-t border-white/10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12 mb-10 sm:mb-12">
           {/* Brand */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
             <h3 className="text-2xl font-playfair font-bold text-white mb-4">Nurul Wahid</h3>
@@ -71,7 +71,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{ scale: 1.2 }}
-                    className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-colors"
+                    className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-colors"
                   >
                     <Icon size={18} />
                   </motion.a>
@@ -82,11 +82,11 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-white/10 pt-8 flex justify-between items-center">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
           <p className="text-gray-light text-sm">
             &copy; {currentYear} Nurul Wahid. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-gray-light">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-light">
             <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gold transition-colors">Terms</a>
           </div>

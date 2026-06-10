@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 const Button = ({ children, onClick, variant = 'primary', className = '' }) => {
   const variants = {
-    primary: 'bg-gold text-navy hover:bg-gold-dark',
-    secondary: 'bg-transparent border border-gold text-gold hover:bg-gold/10',
+    primary: 'bg-gold text-navy shadow-lg shadow-gold/20 hover:bg-gold-dark hover:-translate-y-0.5',
+    secondary: 'bg-white/[0.03] border border-gold/70 text-gold hover:bg-gold/10 hover:border-gold',
     ghost: 'text-gold hover:bg-gold/10',
   }
 
@@ -13,7 +13,7 @@ const Button = ({ children, onClick, variant = 'primary', className = '' }) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={onClick}
-      className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${variants[variant]} ${className}`}
+      className={`premium-button ${variants[variant]} ${className}`}
     >
       {children}
     </motion.button>

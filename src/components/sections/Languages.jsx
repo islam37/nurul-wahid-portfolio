@@ -15,27 +15,28 @@ const Languages = () => {
   ]
 
   return (
-    <section id="languages" className="py-24 bg-charcoal/30">
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section id="languages" className="section-shell bg-charcoal/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-14 lg:mb-16"
         >
-          <span className="text-gold text-sm font-inter tracking-wider uppercase">Communication</span>
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mt-4">
+          <span className="text-gold text-xs sm:text-sm font-bold tracking-[0.22em] uppercase">Communication</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-white mt-4 text-balance">
             Languages
           </h2>
-          <div className="w-20 h-1 bg-gold mx-auto mt-6" />
+          <div className="w-16 sm:w-20 h-1 bg-gold mx-auto mt-6 rounded-full" />
         </motion.div>
 
-        <div ref={ref} className="space-y-8">
+        <div ref={ref} className="grid sm:grid-cols-2 gap-5">
           {languages.map((lang, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: -30 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: index * 0.1 }}
+              className="premium-card p-5"
             >
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-lg font-bold text-white">{lang.name}</h3>

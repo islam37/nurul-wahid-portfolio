@@ -14,9 +14,9 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-24 bg-navy">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="section-shell bg-navy">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left Content */}
           <motion.div
             ref={ref}
@@ -24,16 +24,17 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
+            <span className="text-gold text-xs sm:text-sm font-bold tracking-[0.22em] uppercase">Profile</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-white mt-4 mb-5 text-balance">
               About Me
             </h2>
-            <p className="text-gray-light text-lg leading-relaxed mb-6">
+            <p className="text-gray-light text-base sm:text-lg leading-relaxed mb-5">
               {profileData.bio}
             </p>
-            <p className="text-gray-light text-lg leading-relaxed mb-8">
+            <p className="text-gray-light text-base sm:text-lg leading-relaxed mb-8">
               {profileData.mission}
             </p>
-            <a href="#contact" className="inline-block px-8 py-3 bg-gold text-navy font-semibold rounded-full hover:bg-gold-dark transition-all transform hover:scale-105">
+            <a href="#contact" className="premium-button bg-gold text-navy shadow-lg shadow-gold/20 hover:bg-gold-dark hover:-translate-y-0.5">
               Get In Touch
             </a>
           </motion.div>
@@ -44,7 +45,7 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
+            className="grid gap-4 sm:gap-5"
           >
             {highlights.map((item, index) => {
               const Icon = item.icon
@@ -52,7 +53,7 @@ const About = () => {
                 <motion.div
                   key={index}
                   whileHover={{ x: 10 }}
-                  className="glassmorphism p-6 hover:border-gold transition-all"
+                  className="glassmorphism p-5 sm:p-6 hover:border-gold/70 transition-all"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-gold/10 rounded-lg flex-shrink-0">

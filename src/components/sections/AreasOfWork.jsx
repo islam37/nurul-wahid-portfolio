@@ -30,21 +30,21 @@ const AreasOfWork = () => {
   ]
 
   return (
-    <section id="areas" className="py-24 bg-charcoal/30">
-      <div className="container mx-auto px-6">
+    <section id="areas" className="section-shell bg-charcoal/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-14 lg:mb-16"
         >
-          <span className="text-gold text-sm font-inter tracking-wider uppercase">Expertise</span>
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mt-4">
+          <span className="text-gold text-xs sm:text-sm font-bold tracking-[0.22em] uppercase">Expertise</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-white mt-4 text-balance">
             Areas of Work
           </h2>
-          <div className="w-20 h-1 bg-gold mx-auto mt-6" />
+          <div className="w-16 sm:w-20 h-1 bg-gold mx-auto mt-6 rounded-full" />
         </motion.div>
 
-        <div ref={ref} className="grid md:grid-cols-2 gap-8">
+        <div ref={ref} className="grid sm:grid-cols-2 gap-5 lg:gap-6">
           {areas.map((area, index) => {
             const Icon = area.icon
             return (
@@ -54,7 +54,7 @@ const AreasOfWork = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="glassmorphism p-8 hover:border-gold transition-all"
+                className="glassmorphism p-5 sm:p-6 lg:p-8 hover:border-gold/70 transition-all"
               >
                 <div className="p-4 bg-gold/10 rounded-lg w-fit mb-4">
                   <Icon className="text-gold" size={32} />
