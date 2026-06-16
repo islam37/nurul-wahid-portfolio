@@ -5,13 +5,13 @@
   "mission": "To amplify voices that need to be heard, expose injustices, and contribute to a more informed and equitable world through responsible journalism.",
   "location": "Barcelona, Spain",
   "email": "nurul.wahid@example.com",
-  "phone": "+34 123 456 789",
-  "website": "www.nurulwahid.com",
+  "phone": "+34 654 93 04 31",
+  "website": "https://nurul-wahid-portfolio.vercel.app/",
   "socialLinks": {
-    "facebook": "https://facebook.com/nurulwahid",
+    "facebook": "https://www.facebook.com/nurul.wahid.560",
     "twitter": "https://twitter.com/nurulwahid",
     "linkedin": "https://linkedin.com/in/nurulwahid",
-    "whatsapp": "+34123456789"
+    "whatsapp": "+34 654 93 04 31"
   },
   "portraitImage": "/images/hero-portrait.jpg",
   "resumeUrl": "/resume.pdf"

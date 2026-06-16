@@ -1,24 +1,65 @@
 {
-  "logos": [
-    { "id": 1, "name": "BBC News", "logo": "/images/logos/bbc.svg", "url": "https://bbc.com" },
-    { "id": 2, "name": "Al Jazeera", "logo": "/images/logos/aljazeera.svg", "url": "https://aljazeera.com" },
-    { "id": 3, "name": "The Guardian", "logo": "/images/logos/guardian.svg", "url": "https://theguardian.com" },
-    { "id": 4, "name": "CNN", "logo": "/images/logos/cnn.svg", "url": "https://cnn.com" }
-  ],
-  "interviews": [
-    {
-      "id": 1,
-      "title": "Exclusive Interview: Bangladesh's Media Evolution",
-      "media": "BBC World News",
-      "date": "March 15, 2024",
-      "url": "#"
-    },
-    {
-      "id": 2,
-      "title": "Human Rights in South Asia",
-      "media": "Al Jazeera",
-      "date": "January 10, 2024",
-      "url": "#"
-    }
-  ]
+"logos": [
+{
+"id": 1,
+"name": "Channel i",
+"logo": "/images/logos/channeli.svg",
+"url": "#"
+},
+{
+"id": 2,
+"name": "Ekattor TV",
+"logo": "/images/logos/ekattor.svg",
+"url": "#"
+},
+{
+"id": 3,
+"name": "Daily Jugantor",
+"logo": "/images/logos/jugantor.svg",
+"url": "#"
+},
+{
+"id": 4,
+"name": "The Daily Jalalabad",
+"logo": "/images/logos/jalalabad.svg",
+"url": "#"
+}
+],
+"interviews": [
+{
+"id": 1,
+"title": "Editor & CEO",
+"media": "Channel i",
+"date": "2020 - Present",
+"url": "#"
+},
+{
+"id": 2,
+"title": "Special Correspondent",
+"media": "Channel i",
+"date": "2015 - 2020",
+"url": "#"
+},
+{
+"id": 3,
+"title": "Senior Correspondent",
+"media": "Ekattor TV",
+"date": "2010 - 2015",
+"url": "#"
+},
+{
+"id": 4,
+"title": "Senior Reporter",
+"media": "Daily Jugantor",
+"date": "2005 - 2010",
+"url": "#"
+},
+{
+"id": 5,
+"title": "Staff Reporter",
+"media": "The Daily Jalalabad",
+"date": "1998 - 2005",
+"url": "#"
+}
+]
 }
